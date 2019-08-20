@@ -1,0 +1,288 @@
+/* These are general styles */
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-image: url("https://img.freepik.com/free-vector/abstract-geometric-pattern-background_1319-242.jpg?size=626&ext=jpg");
+    margin: 0;
+}
+
+h1 {
+    font-size: 30px;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 20px;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-weight: bold;
+}
+
+/* These are the navbar styles */
+
+.topnav {
+    background-color: #ffffff;
+    width: 960px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+.container {
+    background-color: #ffffff;
+    width: 100%;
+    border-bottom: 1px solid #cccccc;
+}
+
+.topnav h1 {
+    background-color: #4aaaa5;
+    color: white;
+    float: left;
+    margin: 0;
+    height: 100%;
+    line-height: 100px;
+    padding: 0 15px;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    text-align: center;
+    float: right;
+    padding: 15px;
+    margin-top: 20px;
+    color: #777777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+/*These are the about me section styles */
+
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+
+.about {
+    width: 960px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+    
+}
+
+.about p {
+    margin-right: 20px;
+    color: #777777;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.about::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.about h1 {
+    color: #4aaaa5;
+    border-bottom: 1px solid #777777;
+    margin: 20px 25px;
+    padding-bottom: 20px;
+}
+
+img {
+    float: left;
+    height: 300px;
+    width: 200px;
+    margin: 0 20px 20px 20px;
+}
+
+/* These are the contact section styles */
+
+.contact {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    width: 960px;
+    display: block;
+    margin: 50px auto;
+    height: auto;
+}
+
+.contact h1 {
+    color: #4aaaa5;
+    border-bottom: 1px solid #777777;
+    margin: 20px 25px;
+    padding-bottom: 20px;
+}
+
+form {
+    margin: 25px;
+    color: #777777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+}
+
+#name, #email {
+    width: 100%;
+    margin-top: 10px;
+}
+
+#submit {
+    border: none;
+    background-color: #4aaaa5;
+    padding: 10px 20px;
+    color: #ffffff;
+}
+
+/*These are the portfolio section styles*/
+
+.portfolio {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    width: 960px;
+    display: block;
+    margin: 50px auto;
+    height: auto;
+}
+
+.portfolio h1 {
+    color: #4aaaa5;
+    border-bottom: 1px solid #777777;
+    margin: 20px 25px;
+    padding-bottom: 20px;
+}
+
+.portfolio div {
+    float: left;
+    width: 300px;
+    margin: 30px;
+    position: relative;
+}
+
+.portfolio div h2 {
+    text-align: center;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    width: 300px;
+    margin-left: -150px;
+    background-color: #4aaaa5;
+    color: white;
+    padding: 20px 0;
+}
+
+.portfolio div img {
+    height: 300px;
+    width: 300px;
+    margin: 0;
+}
+
+.portfolio::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* These are the footer styles */
+
+.push {
+    height: 50px;
+}
+
+.footer {
+    text-align: center;
+    margin: 0;
+    background-color: #666666;
+    height: 50px;
+    position: relative;
+    border-top: 8px solid #4aaaa5;
+    clear: both;
+}
+
+.footer p {
+    position: absolute;
+    bottom: 0;
+    left: 47%;
+    margin: 0;
+    color: #ffffff;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 980px) {
+    .topnav {
+        width: 95%;
+    }
+
+    .about {
+        float: left;
+        width: 70%;
+        margin-left: 20px;
+    }
+
+    .contact {
+        float: left;
+        width: 70%;
+        margin-left: 20px;
+    }
+
+    .portfolio {
+        float: left;
+        width: 70%;
+        margin-left: 20px;
+    }
+
+    .portfolio div {
+        width: 250px;
+    }
+
+    .portfolio div img {
+        width: 100%;
+        height: auto;
+    }
+
+    .portfolio div h2 {
+        width: 250px;
+        margin-left: -125px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .topnav {
+        width: 95%;
+    }
+
+    .about {
+        width: 95%;
+    }
+
+    .contact {
+        width: 95%;
+    }
+
+    .portfolio {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    
+}
