@@ -285,4 +285,33 @@ textarea {
 
 @media screen and (max-width: 640px) {
     
+    .topnav h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .table {
+        width: 100%;
+        display: table;
+        margin: 0 auto;
+        background-color: #ffffff;
+        text-align: center;
+    }
+
+    .table li {
+        float: none;
+        display: inline-block;
+    }
+
+    .about {
+        margin-top: 100px;
+    }
+
+    .contact {
+        margin-top: 100px;
+    }
+
+    .portfolio {
+        margin-top: 100px;
+    }
 }
